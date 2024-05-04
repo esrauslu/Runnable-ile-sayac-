@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtGoster"
+        android:layout_width="341dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="152dp"
+        android:text="Süre : 0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBasla"
+        android:layout_width="77dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="236dp"
+        android:background="@drawable/btn_tasarim"
+        android:onClick="basla"
+        android:text="başla"
+        android:textColor="#74C34A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGoster"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnSifirla"
+        android:layout_width="77dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/btn_sifirla"
+        android:onClick="sifirla"
+        android:text="sıfırla"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDurdur"
+        app:layout_constraintEnd_toStartOf="@+id/btnBasla"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGoster"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnDurdur"
+        android:layout_width="77dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/btn_dur"
+        android:onClick="dur"
+        android:text="Durdur"
+        android:textColor="#D83D3D"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBasla"
+        app:layout_constraintEnd_toStartOf="@+id/btnBasla"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnSifirla"
+        app:layout_constraintTop_toBottomOf="@+id/txtGoster"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
